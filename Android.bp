@@ -4,8 +4,9 @@ package {
 
 license {
     name: "external_microsoft_gsl_license",
+    visibility: [":__subpackages__"],
     license_kinds: ["SPDX-license-identifier-MIT"],
-    license_text: ["LICENSE"],
+    license_text: ["LICENSE", "NOTICE"],
 }
 
 cc_library_headers {
@@ -14,5 +15,25 @@ cc_library_headers {
     vendor_available: true,
     host_supported: true,
     product_available: true,
-    apex_available: true,
+    ramdisk_available: true,
+    vendor_ramdisk_available: true,
+    recovery_available: true,
+    native_bridge_supported: true,
+    target: {
+        linux_bionic: {
+            enabled: true,
+        },
+        windows: {
+            enabled: true,
+        },
+    },
+    min_sdk_version: "29",
+    sdk_version: "current",
+    apex_available: [
+        "//apex_available:anyapex",
+        "//apex_available:platform",
+    ],
+    visibility: ["//system/libbase"],
+    cpp_std: "c++14",
+    cflags: ["-Wall", "-Werror"],
 }
