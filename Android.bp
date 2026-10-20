@@ -1,0 +1,18 @@
+package {
+    default_applicable_licenses: ["external_microsoft_gsl_license"],
+}
+
+license {
+    name: "external_microsoft_gsl_license",
+    license_kinds: ["SPDX-license-identifier-MIT"],
+    license_text: ["LICENSE"],
+}
+
+cc_library_headers {
+    name: "microsoft-gsl",
+    export_include_dirs: ["include"],
+    vendor_available: true,
+    host_supported: true,
+    product_available: true,
+    apex_available: true,
+}
