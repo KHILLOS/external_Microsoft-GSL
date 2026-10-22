@@ -2,7 +2,7 @@
 
 ## Verification Method
 Compared UPSTREAM/external_Microsoft-GSL (khillos-17 branch) against:
-1. BlissOS android-x86 reference at external/Microsoft-GSL (android-generic)
+1. BlissOS android-x86 reference at external/Microsoft-GSL (android-generic HEAD 3aa9395)
 2. Upstream microsoft/GSL v5.0.1 (tag fbd20b8)
 
 ## Source Files - Content Verification
