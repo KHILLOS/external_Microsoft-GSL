@@ -19,7 +19,7 @@ third_party {
     identifier {
         type: Git
         value: "https://github.com/microsoft/GSL.git"
-        version: "fbd20b8f05c8a0c4a6c8e8b8c8e8b8c8e8b8c8e8"
+        version: "fbd20b8e8c52cba04dbc869cc9068a7800a5665d"
         closest_version: "v5.0.1"
         primary_source: true
     }

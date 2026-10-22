@@ -27,7 +27,7 @@ BlissOS Android.bp → UPSTREAM Android.bp (commits b4cc25f → db333c7):
 | (no target config) | target: linux_bionic + windows | ✓ Added |
 | (no min_sdk_version) | min_sdk_version: "29" | ✓ Added |
 | (no sdk_version) | sdk_version: "current" | ✓ Added |
-| apex_available: true | apex_available: [anyapex, platform] | ✓ Fixed/expanded |
+| (no apex_available) | apex_available: [anyapex, platform] | ✓ Added (AOSP 17 convention) |
 | (no visibility) | visibility: ["//system/libbase"] | ✓ Added |
 | (no cpp_std) | cpp_std: "c++14" | ✓ Added (upstream requires C++14) |
 | (no cflags) | cflags: ["-Wall", "-Werror"] | ✓ Added |
