@@ -30,7 +30,7 @@ BlissOS Android.bp → UPSTREAM Android.bp (commits b4cc25f → db333c7):
 | (no apex_available) | apex_available: [anyapex, platform] | ✓ Added (AOSP 17 convention) |
 | (no visibility) | visibility: ["//system/libbase"] | ✓ Added |
 | (no cpp_std) | cpp_std: "c++14" | ✓ Added (upstream requires C++14) |
-| (no cflags) | cflags: ["-Wall", "-Werror"] | ✓ Added |
+| cflags: ["-Wall", "-Werror"] | cflags: ["-Wall", "-Werror"] | ✓ Kept (BlissOS already had it) |
 
 All extensions align with AOSP 17 conventions (reference: external/fmtlib).
 
